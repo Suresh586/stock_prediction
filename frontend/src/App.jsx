@@ -1,13 +1,18 @@
 import { useState } from 'react'
 
-import './App.css'
+import './assets/css/style.css'
+import Header from './componenets/Header'
+import Main from './componenets/Main'
+import Footer from './componenets/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-     <h1>Hello from App</h1>
+     <Header />
+     <Main />
+     <Footer />
     </>
   )
 }
