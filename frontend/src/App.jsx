@@ -7,12 +7,14 @@ import Footer from './componenets/Footer'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Register from './componenets/Register'
 import Login from './componenets/Login'
+import AuthProviders from './AuthProviders'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <AuthProviders>
     <BrowserRouter>
     <Header />
        <Routes>
@@ -22,6 +24,7 @@ function App() {
        </Routes>
         <Footer />
     </BrowserRouter>
+    </AuthProviders>
      
     
     </>
