@@ -21,15 +21,13 @@ const Register = () => {
     }
     try {
       const response= await axios.post('http://127.0.0.1:8000/api/v1/register/',userData)
-      console.log("response.data ===>",response.data)
-      console.log("registration succesful")
+      
       setErrors({})
       setSuccess(true)
       
     } catch (error) {
       setErrors(error.response.data)
-      console.log("Registration error : ",error.response.data)
-      
+     
     }finally{
       setLoading(false)
     }

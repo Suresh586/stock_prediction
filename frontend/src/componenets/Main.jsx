@@ -14,7 +14,7 @@ const Main = () => {
           robust market screening tools and data-driven predictive modules to project underlying market health
         Aggregates bottom-up analyst target prices to establish probabilistic market sentiment parameter
           </p>
-          <Button text="Login" class='btn-outline-warning'/>
+          <Button text="Explore now" class='btn-outline-warning' url='/dashboard'/>
           
       </div>
 
